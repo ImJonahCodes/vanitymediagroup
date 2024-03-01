@@ -42,7 +42,7 @@ export default defineConfig({
         tabler: ['*'],
         mdi: ['*'],
       },
-    }),
+    }), 
 
     ...whenExternalScripts(() =>
       partytown({
