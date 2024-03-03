@@ -13,8 +13,10 @@ import { ANALYTICS, SITE } from './src/utils/config.ts';
 import react from "@astrojs/react";
 import markdoc from "@astrojs/markdoc";
 import keystatic from '@keystatic/astro';
+import vercel from "@astrojs/vercel/serverless";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const whenExternalScripts = (items = []) => ANALYTICS.vendors.googleAnalytics.id && ANALYTICS.vendors.googleAnalytics.partytown ? Array.isArray(items) ? items.map(item => item()) : [items()] : [];
+
 
 // https://astro.build/config
 export default defineConfig({
@@ -59,4 +61,5 @@ export default defineConfig({
       }
     }
   },
+  adapter: vercel()
 });
