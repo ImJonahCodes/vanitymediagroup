@@ -3,10 +3,11 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/main-page/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
-import AboutUs from '~/components/main-page/AboutUs.astro'
+import AboutUs from '~/components/main-page/AboutUs.astro';
+import Blog from '~/components/main-page/Blog.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Header from '~/components/widgets/Header.astro';
-import Blog from '~/components/main-page/Blog.astro';
+import Divider from '~/components/custom/lineBreak.astro';
 
 const metadata = {
   title: 'Vanity Media — Welcome',
@@ -65,9 +66,14 @@ const metadata = {
 
     block3title="Auto Services"
     block3description="Our goal is to one day open a shop that will offer detailing, vinyl wrap & tint, building engines and more. With your support, we can make it happen!"
-  >
+  ></AboutUs>
+
+  <Divider />
 
   <!-- Blog -->
-  <Blog />
-  
+  <Blog 
+    title='OUR BLOG'
+    subtitle='News and more from the team at Vanity Media'
+  ></Blog>
+
 </Layout>
