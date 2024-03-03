@@ -6,6 +6,7 @@ import Note from '~/components/widgets/Note.astro';
 import AboutUs from '~/components/main-page/AboutUs.astro'
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Header from '~/components/widgets/Header.astro';
+import Blog from '~/components/main-page/Blog.astro';
 
 const metadata = {
   title: 'Vanity Media — Welcome',
@@ -54,7 +55,19 @@ const metadata = {
   <!-- About Us -->
   <AboutUs 
     title="ABOUT US"
-    description='Vanity Media is a group of car enthusiasts that create online content aswell as offering Automotive Services, Products & More'
+    description='Vanity Media is a group of car enthusiasts that create online content aswell as offering Automotive Services, Products & More. Our Goal is to create entertaining and informative content that the car community and world will enjoy.'
+    
+    block1title="Content Creation"
+    block1description="Our Team creates entertaining car content on YouTube, Instagram and TikTok. Our goal is to provide the car community and world with fun high-quality content that they can watch on their freetime and to create a community and fan base accross the world."
+
+    block2title="Car Shows"
+    block2description="We host car shows around the Pittsburgh, PA area for fellow car enthusiasts to attend to see cars that owners put blood, sweat and tears to build. We offer awards, compentitions and even charity events!"
+
+    block3title="Auto Services"
+    block3description="Our goal is to one day open a shop that will offer detailing, vinyl wrap & tint, building engines and more. With your support, we can make it happen!"
   >
 
+  <!-- Blog -->
+  <Blog />
+  
 </Layout>
