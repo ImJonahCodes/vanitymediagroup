@@ -2,6 +2,11 @@
 import type { CallToAction } from '../../types';
 import { getCollection, type CollectionEntry } from "astro:content";
 
+
+type Props = {
+	page: Page<CollectionEntry<"blog">>;
+};
+
 const { page } = Astro.props;
 
 ---
