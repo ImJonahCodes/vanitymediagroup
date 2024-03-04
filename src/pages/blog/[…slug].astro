@@ -1,0 +1,42 @@
+---
+import Layout from '../../layouts/PageLayout.astro';
+import BlogPage from '../../components/blog/BlogPage.astro';
+import Hero from '../../components/main-page/Hero.astro';
+import CallToAction from '../../components/widgets/CallToAction.astro';
+import Header from '../../components/widgets/Header.astro';
+
+const metadata = {
+  title: 'Vanity Media — Welcome',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+
+  <Fragment slot="header">
+    <Header
+      links={[
+        { text: 'Home', href: '#' },
+        { text: 'About Us', href: '#' },
+        { text: 'Events', href: '#' },
+        { text: 'Blog', href: '#' },
+        { text: 'Shop', href: '#' },
+      ]}
+      actions={[
+        {
+          text: 'Our Instagram',
+          href: '#',
+        },
+      ]}
+      isSticky
+      {/* showToggleTheme */}
+    />
+  </Fragment>
+
+  <!-- Hero -->
+
+  <!-- Blog -->
+  <BlogPage />
+
+
+</Layout>
