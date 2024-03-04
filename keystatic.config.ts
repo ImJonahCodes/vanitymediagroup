@@ -9,7 +9,7 @@ export default config({
       project:'vanity-media/vanitymediagroup',
     },
 	collections: {
-		posts: collection({
+		post: collection({
 			label: "Blogs",
 			slugField: "title",
 			path: "src/content/blog/*",
