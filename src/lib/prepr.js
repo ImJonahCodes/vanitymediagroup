@@ -1,7 +1,7 @@
 // ./src/lib/prepr.js 
 
 export async function Prepr(query, variables) {
-    const response = await fetch(process.env.PREPR_ENDPOINT, {
+    const response = await fetch(import.meta.env.PREPR_ENDPOINT, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
